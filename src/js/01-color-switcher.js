@@ -4,7 +4,7 @@ const refs = {
 };
 refs.startBtn.addEventListener('click', onStart);
 refs.stopBtn.addEventListener('click', onStop);
-
+let timerId = null;
 function onStart() {
   timerId = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
